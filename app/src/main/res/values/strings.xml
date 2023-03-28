@@ -1,0 +1,16 @@
+<resources>
+    <!--Login-->
+    <string name="app_name">TasksManager</string>
+    <string name="lbl_login">Bem-vindo!</string>
+    <string name="txt_email">E-mail</string>
+    <string name="txt_senha">Senha</string>
+    <string name="btn_login">Entrar</string>
+    <string name="lbl_cadastro"><u>Não tem conta? Cadastre-se</u></string>
+    <!--Cadastro-->
+    <string name="lbl_cadastroTitulo">Cadastre-se!</string>
+    <string name="txt_nome">Nome</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="txt_dataNasc">Data de nascimento(dd/mm/yyyy)</string>
+    <string name="txt_confirmar_senha">Confirmar senha</string>
+    <string name="txt_ir_p_login">Já tem uma conta? Faça login!</string>
+</resources>
