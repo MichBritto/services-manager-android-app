@@ -5,13 +5,15 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.tasksmanager.databinding.ActivityLoginBinding
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityLoginBinding
     private lateinit var firebaseAuth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -22,7 +24,6 @@ class LoginActivity : AppCompatActivity(){
             val intent = Intent(this, CadastroActivity::class.java)
             startActivity(intent)
         }
-
         binding.btnLogin.setOnClickListener{
             val email = binding.txtEmail.text.toString()
             val senha = binding.txtSenha.text.toString()
