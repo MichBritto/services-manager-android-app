@@ -6,6 +6,7 @@
     <string name="txt_senha">Senha</string>
     <string name="btn_login">Entrar</string>
     <string name="lbl_cadastro"><u>Não tem conta? Cadastre-se</u></string>
+    <string name="lbl_entre_com">Ou... Faça login com:</string>
     <!--Cadastro-->
     <string name="lbl_cadastroTitulo">Cadastre-se!</string>
     <string name="txt_nome">Nome</string>
