@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui_Activity.ControlUserAccountsActivity"
+    android:background="@color/bg_all_color"
+    android:layout_gravity="center">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="-70dp"
+        android:src="@mipmap/ic_background_image"
+
+        tools:srcCompat="@mipmap/ic_orders_manage_order" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Ordens de Servico"
+        android:textSize="24sp"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <!-- TextView para exibir o pedido -->
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="18sp"
+            android:background="#595959"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <!-- TextView para exibir o status do pedido -->
+        <TextView
+            android:id="@+id/creation_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Criado em"
+            android:textSize="18sp"
+            android:background="#595959"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ordemServico"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+        <Button
+            android:id="@+id/activateAccountBtn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/bg_rectangle"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Ativar"
+            android:text="Ativar"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/desactivateAccountBtn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Desativar"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:backgroundTint="@color/bg_rectangle"
+            android:onClick="onMyButtonClick"
+
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/removeAccountBtn"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Excluir"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/bg_rectangle"
+        android:onClick="onMyButtonClick"
+        android:layout_gravity="center"
+        tools:ignore="TextContrastCheck" />
+
+
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

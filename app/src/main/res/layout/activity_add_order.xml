@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0C0F18"
+    tools:context="ui_Activity.AddOrderActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:src="@mipmap/ic_orders_background_image_foreground"
+        tools:srcCompat="@mipmap/ic_orders_create_image_foreground" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ordem de Serviço"
+        android:layout_marginTop="-60dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_area_rectangule_shape"/>
+
+        <EditText
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Nome"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:backgroundTint="@android:color/transparent"
+            android:maxLines="1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/text_area_rectangule_shape"/>
+
+        <ScrollView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-100dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:hint="Descrição"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                tools:ignore="TouchTargetSizeCheck"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Criar"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="#4e45ed"
+        android:onClick="onMyButtonClick"
+
+        tools:ignore="TextContrastCheck" />
+
+
+</LinearLayout>

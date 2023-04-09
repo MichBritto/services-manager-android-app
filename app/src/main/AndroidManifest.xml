@@ -9,7 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TasksManager"
+        android:theme="@style/Theme.App_ServicesManager"
         tools:targetApi="31">
         <activity
             android:name=".LoginActivity"
@@ -36,6 +36,83 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--novo-->
+        <activity
+            android:name=".ControlUserAccountsActivity"
+            android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderDetailActivity"
+            android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileChangeActivity"
+            android:exported="true"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true"
+            android:label="Services Manager">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddOrderActivity"
+            android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderManagementActivity"
+            android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>

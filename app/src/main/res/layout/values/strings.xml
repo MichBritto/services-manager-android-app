@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- cadastro strings -->
+
+	<string name="app_name">Page1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="email_string">Email</string>
+	<string name="primeiro_nome_string">Primeiro Nome</string>
+	<string name="senha_string">Senha</string>
+	<string name="cadastrar_string">Cadastrar</string>
+	<string name="cadastro_ek3_string">Cadastro</string>
+	<string name="eu_li_e_concordo_com_os_termos_de_uso_string">Eu li e concordo com os termos de uso</string>
+	<string name="j__tem_cadastro__fa_a_seu_login_string">J tem cadastro? Faa seu login</string>
+</resources>

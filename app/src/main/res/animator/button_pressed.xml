@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="scaleX"
+        android:valueTo="0.95"
+        android:duration="50"
+        android:interpolator="@android:interpolator/decelerate_cubic"/>
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:valueTo="0.95"
+        android:duration="50"
+        android:interpolator="@android:interpolator/decelerate_cubic"/>
+    <set android:startOffset="50">
+        <objectAnimator
+            android:propertyName="scaleX"
+            android:valueTo="1"
+            android:duration="50"
+            android:interpolator="@android:interpolator/accelerate_cubic"/>
+        <objectAnimator
+            android:propertyName="scaleY"
+            android:valueTo="1"
+            android:duration="50"
+            android:interpolator="@android:interpolator/accelerate_cubic"/>
+    </set>
+    <objectAnimator
+        android:propertyName="backgroundTint"
+        android:valueTo="@color/button_pressed_color"
+        android:duration="50"
+        android:interpolator="@android:interpolator/decelerate_cubic"/>
+    <set android:startOffset="50">
+        <objectAnimator
+            android:propertyName="backgroundTint"
+            android:valueTo="@color/button_default_color"
+            android:duration="50"
+            android:interpolator="@android:interpolator/accelerate_cubic"/>
+    </set>
+</set>

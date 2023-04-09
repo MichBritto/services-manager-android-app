@@ -1,0 +1,170 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		cadastro
+	 *	@date 		Sunday 26th of March 2023 02:12:23 PM
+	 *	@title 		Page1
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView android:id="@+id/cadastro" 
+		android:layout_width="wrap_content" 
+		android:layout_height="match_parent" >
+
+		<RelativeLayout android:id="@+id/content_container" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" >
+
+
+
+			<RelativeLayout android:id="@+id/page_cadastro_ek1"
+				android:layout_marginTop="0dp"
+				android:layout_marginStart="0dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				>
+
+				<View   android:id="@+id/_bg__cadastro_ek2"
+					android:background="@drawable/_bg__cadastro_ek2_shape"
+					 android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:layout_width="411dp"
+					android:layout_height="731dp" />
+
+				<View   android:id="@+id/rectangle_8"
+					android:background="@drawable/rectangle_8_shape"
+					 android:layout_marginStart="29dp"
+					android:layout_marginTop="215dp"
+					android:layout_width="360dp"
+					android:layout_height="674dp" />
+
+				<View   android:id="@+id/rectangle_5"
+					android:background="@drawable/rectangle_5_shape"
+					 android:layout_marginStart="44dp"
+					android:layout_marginTop="493dp"
+					android:layout_width="331dp"
+					android:layout_height="67dp" />
+
+				<View   android:id="@+id/rectangle_6"
+					android:background="@drawable/rectangle_6_shape"
+					 android:layout_marginStart="46dp"
+					android:layout_marginTop="411dp"
+					android:layout_width="331dp"
+					android:layout_height="67dp" />
+
+				<View   android:id="@+id/rectangle_7"
+					android:background="@drawable/rectangle_7_shape"
+					 android:layout_marginStart="44dp"
+					android:layout_marginTop="331dp"
+					android:layout_width="331dp"
+					android:layout_height="67dp" />
+
+				<TextView android:id="@+id/email"
+					android:fontFamily="Content"
+					android:textSize="12sp"
+					android:textColor="@color/email_color"
+					android:layout_marginLeft="66dp"
+					android:layout_marginTop="353dp"
+					android:layout_width="48dp"
+					android:layout_height="28dp"
+					android:text="@string/email_string"
+					 />
+
+				<TextView android:id="@+id/primeiro_nome"
+					android:fontFamily="Content"
+					android:textSize="12sp"
+					android:textColor="@color/email_color"
+					android:layout_marginLeft="64dp"
+					android:layout_marginTop="428dp"
+					android:layout_width="104dp"
+					android:layout_height="28dp"
+					android:text="@string/primeiro_nome"
+					 />
+
+				<TextView android:id="@+id/senha"
+					android:fontFamily="Content"
+					android:textSize="12sp"
+					android:textColor="@color/email_color"
+					android:layout_marginLeft="64dp"
+					android:layout_marginTop="511dp"
+					android:layout_width="52dp"
+					android:layout_height="28dp"
+					android:text="@string/senha"
+					 />
+
+				<View   android:id="@+id/rectangle_2"
+					android:background="@drawable/rectangle_2_shape"
+					 android:layout_marginStart="46dp"
+					android:layout_marginTop="601dp"
+					android:layout_width="329dp"
+					android:layout_height="65dp" />
+
+				<TextView android:id="@+id/cadastrar"
+					android:fontFamily="Content"
+					android:textSize="20sp"
+					android:textColor="@color/email_color"
+					android:layout_marginLeft="168dp"
+					android:layout_marginTop="615dp"
+					android:layout_width="117dp"
+					android:layout_height="51dp"
+					android:text="@string/cadastrar"
+					 />
+
+				<TextView android:id="@+id/cadastro_ek3"
+					android:fontFamily="Content"
+					android:textSize="36sp"
+					android:textColor="@color/email_color"
+					android:layout_marginLeft="64dp"
+					android:layout_marginTop="241dp"
+					android:layout_width="250dp"
+					android:layout_height="120dp"
+					android:text="@string/cadastro"
+					 />
+
+				<TextView android:id="@+id/eu_li_e_concordo_com_os_termos_de_uso"
+					android:fontFamily="Content"
+					android:textSize="12sp"
+					android:textColor="@color/email_color"
+					android:layout_marginLeft="101dp"
+					android:layout_marginTop="562dp"
+					android:layout_width="264dp"
+					android:layout_height="21dp"
+					android:text="@string/eu_li_e_concordo_com_os_termos_de_uso"
+					 />
+
+				<TextView android:id="@+id/j__tem_cadastro__fa_a_seu_login"
+					android:fontFamily="Content"
+					android:textSize="12sp"
+					android:shadowRadius="4"
+					android:shadowColor="#000000"
+					android:shadowDx="0"
+					android:shadowDy="4"
+					android:textColor="@color/email_color"
+					android:layout_marginLeft="115dp"
+					android:layout_marginTop="670dp"
+					android:layout_width="204dp"
+					android:layout_height="21dp"
+					android:text="@string/ja_tem_cadastro_faca_seu_login"
+					 />
+
+				<ImageView android:id="@+id/moneyverse_crypto_galaxy"
+					android:src="@drawable/moneyverse_crypto_galaxy"
+					android:contentDescription="moneyverse_crypto_galaxy"
+					 android:layout_marginStart="22dp"
+					android:layout_marginTop="-230dp"
+					android:layout_width="367dp"
+					android:layout_height="739dp" />
+
+			</RelativeLayout>
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>

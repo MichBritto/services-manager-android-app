@@ -31,18 +31,17 @@
             <TextView
                 android:id="@+id/lbl_login"
                 android:layout_width="match_parent"
-                android:layout_height="110dp"
+                android:layout_height="70dp"
                 android:background="#00673AB7"
                 android:fontFamily="sans-serif-black"
                 android:gravity="center"
-                android:padding="15dp"
                 android:text="@string/lbl_login"
                 android:textColor="#CEC5D4"
                 android:textSize="30dp" />
 
             <EditText
                 android:id="@+id/txt_email"
-                android:layout_width="260dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
@@ -53,11 +52,12 @@
                 android:inputType="textEmailAddress"
                 android:padding="12dp"
                 android:textColor="#CEC5D4"
-                android:textColorHint="#CEC5D4" />
+                android:textColorHint="#CEC5D4"
+                tools:ignore="TextSizeCheck" />
 
             <EditText
                 android:id="@+id/txt_senha"
-                android:layout_width="260dp"
+                android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
@@ -68,7 +68,8 @@
                 android:inputType="textPassword"
                 android:padding="12dp"
                 android:textColor="#CEC5D4"
-                android:textColorHint="#CEC5D4" />
+                android:textColorHint="#CEC5D4"
+                tools:ignore="TextSizeCheck" />
 
             <Button
                 android:id="@+id/btn_login"
@@ -93,6 +94,23 @@
                 android:text="@string/lbl_cadastro"
                 android:textColor="#CEC5D4"
                 android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/lbl_google"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#00673AB7"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="@string/lbl_google"
+                android:textColor="#CEC5D4"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/btn_google"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/img_google" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

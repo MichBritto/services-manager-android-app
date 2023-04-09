@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B242D"
+    tools:context="ui_Activity.MenuActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0E18"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/username"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/editarPerfilButton"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/background_button"
+                android:clickable="true"
+                android:text="Perfil"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/log_out"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/background_button"
+                android:text="Log Out"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Ordens de Servico"
+            android:textSize="22sp"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <!-- TextView para exibir o pedido -->
+            <TextView
+                android:id="@+id/nome_pedido"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Pedido"
+                android:textSize="18sp"
+                android:background="#595959"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <!-- TextView para exibir o status do pedido -->
+            <TextView
+                android:id="@+id/status_pedido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textSize="18sp"
+                android:background="#595959"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ordemServico"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="start">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addOrderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="36dp"
+                android:clickable="true"
+                android:contentDescription="Adicionar uma ordem de Serviço"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_activity_add_orders"
+                app:tint="@android:color/white"
+                tools:srcCompat="@drawable/ic_activity_add_orders"
+                android:backgroundTint="@color/bg_all_color"
+                app:borderWidth="0dp"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_detail_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:contentDescription="Adicionar uma ordem de Serviço"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_activity_detail_order"
+                app:tint="@android:color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_remove_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="36dp"
+                android:clickable="true"
+                android:contentDescription="Adicionar uma ordem de Serviço"
+                android:focusable="true"
+                app:srcCompat="@drawable/ic_activity_remove_order"
+                app:tint="@android:color/white"
+                app:backgroundTint="#FF0000"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
