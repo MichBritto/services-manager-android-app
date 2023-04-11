@@ -1,20 +1,27 @@
 package model
 
+import java.time.format.DateTimeFormatter
+import java.util.*
+
 class Order {
-    private var id: Number? = null
+    private var id: String? = null
     private var order: String? = null
     private var descricao: String? = null
     private var status: String? = null
     private var comentario: Array<String>? = null
     private var data: String? = null
 
-    constructor(id: Number?, order: String?, descricao: String?, status: String?) {
+    constructor(id: String?, order: String?, descricao: String?, status: String?) {
         this.id = id
         this.order = order
         this.descricao = descricao
         this.status = status
+        this.data = Calendar.getInstance().time.toString()
     }
-    fun getId(): Number? {
+
+
+
+    fun getId(): String? {
         return id
     }
 
@@ -37,4 +44,6 @@ class Order {
     fun getData(): String? {
         return data
     }
+
+
 }

@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#0C0F18"
-    tools:context="ui_Activity.ProfileChangeActivity">
+    tools:context=".ProfileChangeActivity">
 
     <ImageView
         android:id="@+id/imageView"

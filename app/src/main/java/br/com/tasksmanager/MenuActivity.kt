@@ -19,9 +19,9 @@ class MenuActivity : AppCompatActivity(), OrderAdapter.OnOrderClickListener {
         binding = ActivityMenuBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val orders = listOf(
-            Order(1, "Order 1", "Description", "Accepted"),
-            Order(2, "Order 2", "Description","Accepted"),
-            Order(3, "Order 3", "Description","Accepted")
+            Order("heo3k3ms", "Order 1", "Description", "Accepted"),
+            Order("heo3k3ds", "Order 2", "Description","Accepted"),
+            Order("hfo3k3ms", "Order 3", "Description","Accepted")
         )
 
         adapter = OrderAdapter(this, orders, this)

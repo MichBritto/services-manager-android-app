@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#0C0F18"
-    tools:context="ui_Activity.AddOrderActivity">
+    tools:context=".AddOrderActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -41,17 +41,18 @@
             android:background="@drawable/text_area_rectangule_shape"/>
 
         <EditText
+            android:id="@+id/txt_nome"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-50dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="-50dp"
             android:layout_marginRight="5dp"
+            android:backgroundTint="@android:color/transparent"
             android:hint="Nome"
-            android:textSize="18dp"
+            android:maxLines="1"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
-            android:backgroundTint="@android:color/transparent"
-            android:maxLines="1"
+            android:textSize="18dp"
             tools:ignore="TouchTargetSizeCheck" />
 
         <View
@@ -63,30 +64,31 @@
         <ScrollView
             android:layout_width="350dp"
             android:layout_height="100dp"
-            android:layout_marginTop="-100dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="-100dp"
             android:layout_marginRight="30dp">
 
             <EditText
+                android:id="@+id/txt_descricao"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
                 android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginRight="13dp"
-                android:hint="Descrição"
-                android:textSize="18dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
                 android:backgroundTint="@android:color/transparent"
+                android:hint="Descrição"
                 android:inputType="textMultiLine"
                 android:scrollbars="vertical"
-                tools:ignore="TouchTargetSizeCheck"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18dp"
+                tools:ignore="TouchTargetSizeCheck" />
         </ScrollView>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_registrar"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
