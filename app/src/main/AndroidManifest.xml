@@ -12,6 +12,15 @@
         android:theme="@style/Theme.App_ServicesManager"
         tools:targetApi="31">
         <activity
+            android:name=".LoadingScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -113,6 +122,15 @@
                 <action android:name="com.example.myapp.NEW_ACTIVITY" />
 
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddComentActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
