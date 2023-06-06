@@ -3,6 +3,7 @@ package br.com.tasksmanager
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +13,11 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.Task
+import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.FirebaseError
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthEmailException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.GoogleAuthProvider
 
 
@@ -51,17 +56,28 @@ class LoginActivity : AppCompatActivity(){
             val senha = binding.txtSenha.text.toString()
 
             if(email.isNotEmpty() && senha.isNotEmpty()) {
-                firebaseAuth.signInWithEmailAndPassword(email, senha).addOnCompleteListener {
-                    if (it.isSuccessful) {
+                firebaseAuth.signInWithEmailAndPassword(email,senha).addOnSuccessListener { authResult ->
+                    val snackbar = Snackbar.make(binding.root,"Bem-vindo(a)!",Snackbar.LENGTH_LONG)
+                    snackbar.duration = 3000
+                    snackbar.show()
+                    //chamar a tela de login somente apos 3 sec
+                    val handler = Handler()
+                    handler.postDelayed({
                         val intent = Intent(this, MenuActivity::class.java)
                         startActivity(intent)
-                    } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
-                    }
+                    }, 2000)
+
+                }.addOnFailureListener { exception ->
+                    val errorMessage = "Erro ao realizar login, verifique os dados e tente novamente."
+                    val snackbar = Snackbar.make(binding.root, errorMessage, Snackbar.LENGTH_LONG)
+                    snackbar.duration = 3000
+                    snackbar.show()
                 }
             }
             else{
-                Toast.makeText(this, "Existem campos não preenchidos.", Toast.LENGTH_SHORT).show()
+                val snackbar = Snackbar.make(binding.root,"Existem campos não preenchidos.", Snackbar.LENGTH_LONG)
+                snackbar.duration = 3000
+                snackbar.show()
             }
 
         }
